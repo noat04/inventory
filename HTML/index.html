@@ -342,12 +342,31 @@
                         </button>
                     </div>
                 </form>
+                <div id="confirmationMessage" style="display: none; text-align: center; color: green;">
+                    <p>Your RSVP has been submitted successfully!</p>
+                </div>
             </div>
         </div>
         <div class="footer">
             
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('myForm');
+            const confirmationMessage = document.getElementById('confirmationMessage');
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the default form submission
+
+                // Show the confirmation message
+                confirmationMessage.style.display = 'block';
+
+                // Optionally, you can reset the form after submission
+                form.reset();
+            });
+        });
+    </script>
     
 </body>
 </html>
