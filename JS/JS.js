@@ -39,3 +39,12 @@ function handleScroll() {
 
 // Thêm sự kiện cuộn trang
 window.addEventListener('scroll', handleScroll);
+
+const form = document.getElementById('myForm');
+const confirmationMessage = document.getElementById('confirmationMessage');
+
+form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+    confirmationMessage.style.display = 'block';
+    form.reset();
+});
