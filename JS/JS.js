@@ -48,3 +48,29 @@ form.addEventListener('submit', function(event) {
     confirmationMessage.style.display = 'block';
     form.reset();
 });
+
+const myModal = new bootstrap.Modal(
+    document.getElementById("modalId"),
+    options,
+);
+
+function copyPhoneNumber() {
+    // Lấy nội dung của phần tử có id là "phone-number"
+    var phoneNumber = document.getElementById("phone-number").innerText.trim();
+
+    // Sao chép nội dung vào clipboard
+    navigator.clipboard.writeText(phoneNumber)
+        .then(function() {
+            document.getElementById("btkh").style.display = "inline";
+            // Ẩn thông báo sau 3 giây
+            setTimeout(function(){
+                document.getElementById("btkh").style.display = "none";
+            }, 3000);
+        })
+        .catch(function(err) {
+            // Xử lý lỗi khi không thể sao chép
+            console.error("Không thể sao chép: ", err);
+        });
+
+}
+

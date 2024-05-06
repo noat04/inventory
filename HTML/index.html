@@ -348,11 +348,56 @@
             </div>
         </div>
         <div class="footer">
+            <!-- Modal trigger button -->
+            <button type="button" class="btn btn-danger btn-lg btn-footer" data-bs-toggle="modal" data-bs-target="#modalId">Launch</button>
+        </div>    
+    </div>
+     <!-- Modal Body -->
+        <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+        <div
+            class="modal fade"
+            id="modalId"
+            tabindex="-1"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
             
+            role="dialog"
+            aria-labelledby="modalTitleId"
+            aria-hidden="true"
+        >
+            <div
+                class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md"
+                role="document"
+            >
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleId">
+                            Thanks for your love
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="" class="form-label">Ngân hàng Thương mại cổ phần Quân đội </label>
+                            
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="mb-3 text-footer">
+                            <p>Account Name</p>
+                            <p>NGUYEN THI NGOC TU</p>
+                            <p>Account Number</p>
+                            <p id="phone-number">0932896225 <button onclick="copyPhoneNumber()"><img src="../IMAGE/pngtree-vector-copy-icon-png-image_4013516-removebg-preview.png" alt=""></button></p>
+                            <small  id="btkh"  class="text-muted">Đã copy thành công</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- ///test -->
-        <!-- test2 -->
-        <!-- test3 -->
-    </div>  
 </body>
 </html>
