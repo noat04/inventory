@@ -1,6 +1,6 @@
 *{
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
 }
 body {
     overflow-x: hidden;
@@ -49,6 +49,8 @@ body {
 }
 .invitation{
     width: 30%;
+    position: relative;
+    left: 35%;
 }
 .invitation h3{
     padding: 50px 10px;
@@ -67,14 +69,18 @@ body {
     color: #000;
 }
 .event-time{
-    width: 65%;
+    width: 60%;
     padding: 30px 10px 10px 10px;
     color: #000;
+    position: relative;
+    left: 20%;
+    
 }
 /* Events Main */
 .events-main {
     display: flex;
     position: relative; /* Đặt vị trí tương đối */
+    width: auto;
 }
 
 /* Đường kẻ dưới */
@@ -103,6 +109,12 @@ body {
 .events-main img{
     width: 89px;
     height: 80px;
+}
+.section{
+    position: relative;
+    left: 2%;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 .section h3{
     position: relative;
@@ -168,6 +180,8 @@ body {
     width: 70%;
     height: 500px;
     display: flex;
+    position: relative;
+    left: 15%;
 }
 .wedding-aside{
     width: 40%;
@@ -202,17 +216,22 @@ body {
     height: 500px;
     display: flex;
     margin-top: 200px;
+    position: relative;
+    left: 15%;
 }
 .groom-padding{
     padding: 0px 100px 0px 0px;
 }
 .past{
-    width: 70%;
+    width: 100%;
     height: auto;
     margin-top: 100px;
+
 }
 .icon-past{
     text-align: center;
+    width: auto;
+
 }
 .icon-past img{
     width: 200px;
@@ -223,6 +242,8 @@ body {
     width: 30%;
     height: auto;
     padding-bottom: 20px;
+    position: relative;
+    left: 35%;
 }
 .past-title p{
     text-align: center;
@@ -232,15 +253,19 @@ body {
     text-align: center;
 }
 .box{
-    width: 100%;
+    width: 70%;
     height: auto;
     border: 1px solid black;
     display: flex;
+    position: relative;
+    left: 15%;
 }
 .box-number{
     font-size:100px;
     position: relative;
     top: 65px;
+    position: relative;
+    left: 15%;
 }
 .box-title{
     text-align: center;
@@ -257,6 +282,8 @@ body {
     padding-top: 5px;
     padding-bottom: 10px;
     border-bottom: 2px solid black;
+    position: relative;
+    left: 40%;
 }
 .box-talk{
     font-size: large;
@@ -281,6 +308,8 @@ body {
     width: 50%;
     text-align: center;
     letter-spacing: 6px;
+    position: relative;
+    left: 25%;
 }
 .icon-video{
     text-align: center;
@@ -299,6 +328,8 @@ body {
     width: 70%;
     height: auto;
     padding-top: 40px;
+    position: relative;
+    left: 15%;
 }
 .video-slide video{
     width: 100%;
@@ -308,6 +339,9 @@ body {
     width: 100%;
     height: auto;
     padding-top: 100px;
+    /* position: relative;
+    left: 12%; */
+    text-align: center;
 }
 .photo-title{
     width: 100%;
@@ -320,6 +354,8 @@ body {
     width: 75%;
     height: auto;
     padding-top: 40px;
+    position: relative;
+    left: 14%;
 }
 
 .anh6 img{
@@ -343,6 +379,8 @@ body {
     padding-bottom: 100px;
     font-size: 25px;
     color: gray;
+    position: relative;
+    left: 15%;
 }
 .rvsp-title{
     text-align: center;
@@ -595,30 +633,35 @@ body {
     --animation-delay: 0.5s; /* Độ trễ giữa các phần tử */
 }
 /* ////MOBILE  739px*/
-@media only screen and (max-width:46.1875em){
-    body{
-        overflow-x: hidden;
+
+/* @media only screen and (max-width:46.1875em){
+    *{
+        padding: 0;
+        margin: 0;
     }
-    .wapper{
+    body {
+        overflow-x: hidden;
         width: 100%;
+        margin: 0;
+        padding: 0;
     }
     .header{
         width: auto;
-        height: 600px;
+        height: 50vh;
         background-image: url('../IMAGE/mat-tien-shop-quan-ao-dep-0.jpg');
         background-size: 100% auto;
     }
     .title{
-        padding: 150px 20px 100px 20px;
+        padding: 15vh 2vw 10vh 2vw;
     }
     .title h1{
         text-align:center;
         color: aliceblue;
-        font-size: 100px;
+        font-size: 10vw;
         font-family: "Satisfy", cursive;
-        font-weight: 400;       
-        font-style: normal;
-        padding-bottom: 10px;
+        font-weight: 300;       
+        font-style: normal; 
+        padding-bottom: 1%;
     }
     .title h2{
         text-align:center;
@@ -646,7 +689,7 @@ body {
     .invitation{
         width: 35%;
         position: relative;
-        /* left:20%; */
+   
     }
     .invitation h3{
         padding: 50px 10px;
@@ -675,22 +718,22 @@ body {
         color: #000;
         position: relative;
     }
-    /* Events Main */
+   
     .events-main {
         display: flex;
-        position: relative; /* Đặt vị trí tương đối */
+        position: relative;
     }
     
-    /* Đường kẻ dưới */
+   
     .events-main::after {
         content: "";
         position: absolute;
         left: 0;
         right: 0;
         bottom: 30%;
-        height: 2px; /* Độ dài đường kẻ */
-        background-color: black; /* Màu sắc của đường kẻ */
-        transform: translateY(50%); /* Điều chỉnh vị trí dọc */
+        height: 2px; 
+        background-color: black;
+        transform: translateY(50%); 
     }
     .point::before{
         content: "";
@@ -788,7 +831,6 @@ body {
     .wedding-section{
         width: 60%;
         height: auto;
-        /* background-color: blueviolet; */
     }
     .wedding-main{
        padding: 10px 10px 10px 100px;
@@ -940,7 +982,7 @@ body {
     }
     .col {
         flex: 1;
-        margin: 0 0 10px 0; /* Thêm khoảng cách 10px ở bên trái và bên phải của mỗi cột */
+        margin: 0 0 10px 0;
     }
     .rvsp{
         width: 70%;
@@ -982,8 +1024,7 @@ body {
         bottom: 0;
         width: auto;
         right: 10px;
-        /* Các thuộc tính khác tùy theo nhu cầu của bạn */
-        z-index: 999; /* Đảm bảo footer hiển thị trên tất cả các phần khác */
+        z-index: 999; 
     }
     .modal-header{
         margin: 0;
@@ -1021,8 +1062,7 @@ body {
     .thiep{ 
         position: fixed;
         animation: moveUpDown 2s infinite;
-        bottom: 20px; /* Adjust this value to position it correctly */
-        /* right: 20px; Adjust this value to position it correctly */
+        bottom: 20px; 
         left: 20%;
         z-index: 1000;
         text-align: center;
@@ -1050,10 +1090,9 @@ body {
     .form-label{
         text-align: center;
     }
-
-}
+} */
 /* ///TABLET >= 740px and <=1024 */
-@media only screen and (min-width:46.25em) and (max-width:63.9375em){
+/* @media only screen and (min-width:46.25em) and (max-width:63.9375em){
     *{
         padding: 0;
         margin: 0;
@@ -1111,4 +1150,191 @@ body {
         border-bottom: 2px solid black;
     }
 
+} */
+
+@media (max-width: 768px) {
+    .header {
+        height: 300px; /* Giảm chiều cao cho màn hình nhỏ hơn */
+        background-size: cover;
+    }
+
+    .title {
+        padding: 50px 10px; /* Giảm padding cho màn hình nhỏ hơn */
+    }
+
+    .title h1 {
+        font-size: 10vw; /* Sử dụng đơn vị vw để điều chỉnh kích thước font theo chiều rộng màn hình */
+    }
+
+    .title h2 {
+        font-size: 8vw;
+    }
+
+    .title h4 {
+        font-size: 4vw;
+        letter-spacing: 2px;
+    }
+
+    .information {
+        height: auto; /* Để chiều cao tự động điều chỉnh theo nội dung */
+        padding: 20px;
+    }
+
+    .invitation {
+        width: 90%;
+        left: 5%;
+    }
+
+    .events-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .content-left,
+    .content-right {
+        width: 100%;
+    }
+
+    .content-left img,
+    .content-right img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .bride,
+    .groom {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .box {
+        flex-direction: column;
+        width: 90%;
+        left: 5%;
+    }
+
+    .video-slide {
+        width: 100%;
+        left: 0;
+    }
+
+    .photo-title {
+        font-size: 6vw;
+    }
+
+    .picture {
+        width: 100%;
+        left: 0;
+        padding: 0 10px;
+    }
+
+    .rvsp {
+        width: 90%;
+        left: 5%;
+    }
+
+    .rvsp button {
+        width: 100%;
+        height: auto;
+        font-size: 4vw;
+    }
+
+    .footer {
+        height: auto;
+        padding: 20px;
+    }
+
+    .thiep img {
+        width: 40px;
+    }
+
+    .modal-title {
+        font-size: 6vw;
+    }
+
+    .modal-body,
+    .modal-footer {
+        padding: 10px;
+    }
+
+    .text-footer button {
+        font-size: 4vw;
+    }
+
+    .text-footer img {
+        width: 4vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .title h1 {
+        font-size: 12vw;
+    }
+
+    .title h2 {
+        font-size: 10vw;
+    }
+
+    .title h4 {
+        font-size: 5vw;
+        letter-spacing: 1px;
+    }
+
+    .invitation h3 {
+        font-size: 6vw;
+    }
+
+    .events-main img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .section h3 {
+        font-size: 6vw;
+    }
+
+    .content-title {
+        font-size: 6vw;
+    }
+
+    .wedding-title,
+    .wedding-name,
+    .wedding-content {
+        font-size: 5vw;
+    }
+
+    .past-title p {
+        font-size: 10vw;
+    }
+
+    .box-number {
+        font-size: 8vw;
+    }
+
+    .box-title {
+        font-size: 6vw;
+    }
+
+    .box-text,
+    .box-talk {
+        font-size: 4vw;
+    }
+
+    .video-title {
+        font-size: 6vw;
+    }
+
+    .photo-title {
+        font-size: 5vw;
+    }
+
+    .rvsp-title {
+        font-size: 6vw;
+    }
 }
