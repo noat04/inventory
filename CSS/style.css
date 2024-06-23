@@ -632,526 +632,6 @@ body {
 :root {
     --animation-delay: 0.5s; /* Độ trễ giữa các phần tử */
 }
-/* ////MOBILE  739px*/
-
-/* @media only screen and (max-width:46.1875em){
-    *{
-        padding: 0;
-        margin: 0;
-    }
-    body {
-        overflow-x: hidden;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    .header{
-        width: auto;
-        height: 50vh;
-        background-image: url('../IMAGE/mat-tien-shop-quan-ao-dep-0.jpg');
-        background-size: 100% auto;
-    }
-    .title{
-        padding: 15vh 2vw 10vh 2vw;
-    }
-    .title h1{
-        text-align:center;
-        color: aliceblue;
-        font-size: 10vw;
-        font-family: "Satisfy", cursive;
-        font-weight: 300;       
-        font-style: normal; 
-        padding-bottom: 1%;
-    }
-    .title h2{
-        text-align:center;
-        color: aliceblue;
-        font-size: 80px;
-        font-family: "Merriweather Sans", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 300;
-        font-style: normal;
-        padding-bottom: 10px;
-    }
-    .title h4{
-        text-align:center;
-        color: aliceblue;
-        padding-bottom: 10px;
-        letter-spacing: 10px;
-    }
-    .information{
-        text-align:center;
-        width: 100%;
-        height: 770px;
-        background-color: beige;
-       
-    }
-    .invitation{
-        width: 35%;
-        position: relative;
-   
-    }
-    .invitation h3{
-        padding: 50px 10px;
-        color: #000;
-        border-bottom: 2px solid black;
-    }
-    .invitation h3{
-        padding: 50px 10px;
-        color: #000;
-        border-bottom: 2px solid black;
-    }
-    .time_location h5,h3{
-        padding: 30px 0 0 0;
-        color: #000;
-    }
-    .event{
-        padding:30px 0 0 0;
-    }
-    .event h3{
-        padding: 40px 0 0 0;
-        color: #000;
-    }
-    .event-time{
-        width: 65%;
-        padding: 30px 10px 10px 10px;
-        color: #000;
-        position: relative;
-    }
-   
-    .events-main {
-        display: flex;
-        position: relative;
-    }
-    
-   
-    .events-main::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 30%;
-        height: 2px; 
-        background-color: black;
-        transform: translateY(50%); 
-    }
-    .point::before{
-        content: "";
-        display: block;
-        position: absolute;
-        width: 2px;
-        height: 40px;
-        left: 50%;
-        top: 135px;
-        transform: translateX(-50%);
-        background-color: black;
-        z-index: 2;
-    }
-    .events-main img{
-        width: 89px;
-        height: 80px;
-    }
-    .section{
-       padding: 0 10px 7px 20px;
-    }
-    .section h3{
-        position: relative;
-        top: 30%;
-        color: #413b3b;
-    
-    }
-    .story{
-        width: 100%;
-        height: 1000px;
-    }
-    .story-background{
-        position: absolute;
-        width: 100%;
-        height: 450px;
-        background-image: url('../IMAGE/DX0I5566.jpg');
-        background-size: 100% auto;
-    }
-    .our-story{
-        margin: 200px 50px 10px 50px;
-        background-color: aliceblue;
-    }
-    .content{
-        display: flex;
-    }
-    .content-left{
-        width: 50%;
-        height: auto;
-    }
-    .content-left img{
-        margin: 50px 10px 55px 55px;
-        width: 80%;
-        height: 400px;
-    
-    }
-    .content-right{
-        width: 50%;
-        height: auto;
-    }
-    .content-text{
-        margin: 50px 50px 50px 50px;
-    }
-    .content-title{
-        clear: both;
-        word-spacing: 10px;
-        font-size: 40px;
-        font-weight: bold;
-    }
-    .icon{
-        text-align: center;
-    }
-    .icon img{
-        width: 400px;
-        height: auto;
-    }
-    .main{
-        width: 100%;
-        height: auto;
-        background-color: antiquewhite;
-        margin: 0 0 0 0;
-    }
-    .bride{
-        width: 70%;
-        height: 500px;
-        display: flex;
-    }
-    .wedding-aside{
-        width: 40%;
-        height: auto;
-    }
-    .wedding-aside img{
-        text-align: center;
-        width: 100%;
-        height: 350px;
-    } 
-    .wedding-section{
-        width: 60%;
-        height: auto;
-    }
-    .wedding-main{
-       padding: 10px 10px 10px 100px;
-    }
-    .wedding-title{
-        font-size: large;
-        font-weight: bold;
-    }
-    .wedding-name{
-        font-size: 25px;
-    }
-    .wedding-content{
-        font-size: small;
-    }
-    .groom{
-        width: 70%;
-        height: 500px;
-        display: flex;
-        margin-top: 100px;
-    }
-    .groom-padding{
-        padding: 0px 100px 0px 0px;
-    }
-    .past{
-        width: 70%;
-        height: auto;
-        margin-top: 50px;
-    }
-    .icon-past{
-        text-align: center;
-    }
-    .icon-past img{
-        width: 200px;
-        height: auto;
-    }
-    .past-title{
-        border-bottom: 3px solid black;
-        width: 50%;
-        height: auto;
-        padding-bottom: 20px;
-    }
-    .past-title p{
-        text-align: center;
-        font-size: 50px;
-    }
-    .past-title h1{
-        text-align: center;
-    }
-    .box{
-        width: 100%;
-        height: auto;
-        border: 1px solid black;
-        display: flex;
-    }
-    .box-number{
-        font-size:50px;
-        position: relative;
-        top: 35px;
-    }
-    .box-title{
-        text-align: center;
-        font-size: 30px;
-        padding: 10px 5px 5px 5px;
-    }
-    .box-text{
-        padding: 10px 5px 5px 5px;
-        text-align: center;
-        font-size: 11px;
-    }
-    .box-ps{
-        width: 20%;
-        padding-top: 5px;
-        padding-bottom: 10px;
-        border-bottom: 2px solid black;
-    }
-    .box-talk{
-        font-size:12px;
-    }
-    .box-left{
-        width: 50%;
-        padding: 5px 5px 5px 5px;
-    }
-    .box-right{
-        width: 50%;
-    }
-    .box-right img{
-        width: 100%;
-        height: auto;
-    }
-    .video{
-        width: 100%;
-        height: auto;
-        margin-top: 70px;
-    }
-    .video-title{
-        width: 70%;
-        text-align: center;
-        letter-spacing: 6px;
-    }
-    .icon-video{
-        text-align: center;
-    }
-    .icon-video img{
-        width: 200px;
-        height: auto;
-    }
-    .video-content{
-        background-image: url('../IMAGE/mat-tien-shop-quan-ao-dep-0.jpg');
-        width: 100%;
-        height: 400px;
-    }
-    .video-slide{
-        text-align: center;
-        width: 70%;
-        height: auto;
-        padding-top: 40px;
-    }
-    .video-slide video{
-        width: 100%;
-        height: auto;
-    }
-    .photo{
-        width: 100%;
-        height: auto;
-        padding-top: 100px;
-    }
-    .photo-title{
-        width: 100%;
-        height: auto;
-        font-size: 35px;
-        text-align: center;
-        letter-spacing: 10px;
-    }
-    .picture{
-        width: 75%;
-        height: auto;
-        padding-top: 40px;
-    }
-    
-    .anh6 img{
-        width: 100%; 
-        height: auto;
-    }
-    .anh2 img{
-        width: 110%;height:auto;
-    }
-    .anh5 img{
-        width: 100%; max-height: 357px;
-    }
-    .col {
-        flex: 1;
-        margin: 0 0 10px 0;
-    }
-    .rvsp{
-        width: 70%;
-        height: auto;
-        padding-top: 100px;
-        padding-bottom: 100px;
-        font-size: 20px;
-        color: gray;
-    }
-    .rvsp-title{
-        text-align: center;
-        font-size: 35px;
-        font-weight: 15px;
-    }
-    .rvsp button{
-        width: 200px;
-        height: 60px;
-        font-size: 25px;
-    }
-    .yes-no{
-        padding-left:100px;
-        display: inline;
-    }
-    #choose1[type="radio"] {
-        width: 30px; 
-        height: 30px;
-    }
-    #choose2[type="radio"] {
-        width: 30px; 
-        height: 30px;
-    }
-    .footer{
-        width: 100%;
-        height: 100px;
-        background-color:rgb(161, 182, 124);
-    }
-    .btn-footer {
-        position: fixed;
-        bottom: 0;
-        width: auto;
-        right: 10px;
-        z-index: 999; 
-    }
-    .modal-header{
-        margin: 0;
-    }
-    .modal-title{
-        position: relative;
-        left: 30px;
-        color: crimson;
-    }
-    .modal-body{
-        margin: 0;
-    }
-    .modal-footer{
-        margin: 0;
-        text-align: center;
-    }
-    .text-footer{
-        width: 100%;
-    }
-    .text-footer button{
-        padding: 2px 2px 2px 2px;
-        border-radius: 5px;
-    }
-    .text-footer button:hover{
-        background-color:gray;
-    }
-    .text-footer img{
-        width: 20px;
-        height: auto;
-        text-align: center;
-    }
-    #btkh {
-        display: none;
-    }
-    .thiep{ 
-        position: fixed;
-        animation: moveUpDown 2s infinite;
-        bottom: 20px; 
-        left: 20%;
-        z-index: 1000;
-        text-align: center;
-    }
-    .gift{
-        opacity: 0;
-        font-size: 15px;
-        color: chocolate;
-    }
-    .thiep:hover .gift{
-        opacity: 1;
-    }
-    .thiep img{
-        width: 50px;
-        height: auto;
-    }
-    .tknh{
-        overflow-y: hidden;
-    }
-    .tknh img{
-        width: 100%;
-        height: auto;
-        
-    }
-    .form-label{
-        text-align: center;
-    }
-} */
-/* ///TABLET >= 740px and <=1024 */
-/* @media only screen and (min-width:46.25em) and (max-width:63.9375em){
-    *{
-        padding: 0;
-        margin: 0;
-    }
-    body {
-        width: 100%;
-    }
-    .header{
-        width: auto;
-        height: 600px;
-        background-image: url('../IMAGE/mat-tien-shop-quan-ao-dep-0.jpg');
-        background-size: 100% auto;
-    }
-    .title{
-        padding: 150px 20px 100px 20px;
-    }
-    .title h1{
-        text-align:center;
-        color: aliceblue;
-        font-size: 100px;
-        font-family: "Satisfy", cursive;
-        font-weight: 400;       
-        font-style: normal;
-        padding-bottom: 10px;
-    }
-    .title h2{
-        text-align:center;
-        color: aliceblue;
-        font-size: 80px;
-        font-family: "Merriweather Sans", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 300;
-        font-style: normal;
-        padding-bottom: 10px;
-    }
-    .title h4{
-        text-align:center;
-        color: aliceblue;
-        padding-bottom: 10px;
-        letter-spacing: 10px;
-    }
-    .information{
-        text-align:center;
-        width: 100%;
-        height: 770px;
-        background-color: beige;
-       
-    }
-    .invitation{
-        width: 30%;
-    }
-    .invitation h3{
-        padding: 50px 10px;
-        color: #000;
-        border-bottom: 2px solid black;
-    }
-
-} */
-
 @media (max-width: 768px) {
     .header {
         height: 300px; /* Giảm chiều cao cho màn hình nhỏ hơn */
@@ -1275,6 +755,15 @@ body {
 }
 
 @media (max-width: 480px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        overflow-x: hidden;
+        overflow-y: auto; /* tự động hiển thị thanh cuộn dọc nếu cần thiết */
+    }
     .title h1 {
         font-size: 12vw;
     }
@@ -1358,15 +847,29 @@ body {
     .content-title {
         font-size: 6vw;
     }
-
-    .wedding-title,
-    .wedding-name,
-    .wedding-content {
+    .wedding-title{
+        font-size: 6vw;
+    }
+    .wedding-name{
         font-size: 5vw;
     }
-
+    .wedding-content {
+        font-size: 4vw;
+    }
+    .wedding-main{
+        width: 100%;
+        padding: 30px 0px 30px 0px;
+        text-align: center;
+    }
+    .icon img{
+         width: 50%;        
+    }
+    .past-title{
+        padding: 0;
+        width: auto;
+    }
     .past-title p {
-        font-size: 10vw;
+        font-size: 7vw;
     }
 
     .box-number {
@@ -1384,15 +887,21 @@ body {
 
     .bride,
     .groom {
-        display: flex;
+        display:flex;
         flex-direction: column;
-        width: 100%;
+        width: 70%;
         height: auto;
     }
     .wedding-aside img{
         text-align: center;
         width: 110%;
         height: auto;
+    }
+    .wedding-aside{
+        width: auto;
+    }
+    .wedding-section{
+        width: auto;
     }
     .video-title {
         font-size: 6vw;
