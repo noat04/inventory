@@ -275,11 +275,18 @@
     .video-title {
         font-size: 6vw;
     }
-
+    .video-slide{
+        width: 70%;
+        position: relative;
+        left: 15%;
+        bottom: 5%;
+    }
+    .video-content{
+        background-image: none;
+    }
     .photo-title {
         font-size: 5vw;
     }
-
     .rvsp-title {
         font-size: 6vw;
     }

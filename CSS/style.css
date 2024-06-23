@@ -326,11 +326,11 @@ body {
 }
 .video-slide{
     text-align: center;
-    width: 70%;
+    width: 20%;
     height: auto;
     padding-top: 40px;
     position: relative;
-    left: 15%;
+    left:40%;
 }
 .video-slide video{
     width: 100%;
