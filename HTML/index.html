@@ -12,7 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="../JS/jquery-3.7.1.min.js"></script>
     <script src="../JS/JS.js"></script>
+    <script src="../JS/form.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -334,7 +336,7 @@
                             aria-describedby="helpId"
                             placeholder=""
                         required/>
-                        <small id="helpId" class="form-text text-muted">Help text</small>
+                        <small id="btname" class="form-text"></small>
                     </div>
                     <div class="mb-3">
                         <label for="" class="form-label">Phone number</label>
@@ -346,7 +348,7 @@
                             aria-describedby="helpId"
                             placeholder=""
                         required/>
-                        <small id="helpId" class="form-text text-muted">Help text</small>
+                        <small id="btphone" class="form-text"></small>
                     </div>
                     <div class="mb-3" style="text-align: center;">
                         <input type="radio" value="yes" name="choose" id="choose1" required/>
@@ -355,6 +357,8 @@
                         <input type="radio" value="no" name="choose" id="choose2" required/>
                         <label class="form-check-label" for="choose2"> NO </label>
                         </div>
+                        <br>
+                        <!-- <small id="btchon" class="form-text"></small> -->
                     </div>
                     <div class="mb-3 nut" style="text-align: center; padding-top: 10px;">
                         <button
