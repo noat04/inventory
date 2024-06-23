@@ -262,11 +262,28 @@
         top: 35px;
         left: 20px;
     }
-
+    .box-left{
+        width: 100%;
+        padding-bottom: 10%;
+    }
+    .box-right{
+        width: 100%;
+    }
+    .box-right img{
+        width: 70%;
+        padding: 30px 15px 30px 30px;
+        position: relative;
+        left:15%;
+        border-radius: 50px;
+    }
+    .box-content{
+        width: 100%;
+    }
     .box-title {
         font-size: 6vw;
+        width: 100%;
     }
-
+    
     .box-text,
     .box-talk {
         font-size: 4vw;
@@ -312,9 +329,14 @@
         font-size: 5vw;
     }
     .yes-no{
-        padding: 0;
+        padding: 20px;
     }
     .rvsp-title {
         font-size: 6vw;
+    }
+    .row-box{
+        display: inline-block;
+        width: 100%;
+        padding-top: 20px;
     }
 }
