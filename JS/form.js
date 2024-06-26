@@ -19,24 +19,9 @@ $(document).ready(function(){
             $("#btphone").html("Invalid phone number").css("color", "Red");
             return false;
         } else {
-            $("#btphone").html("SVerify correctly").css("color", "Green");
+            $("#btphone").html("Verify correctly").css("color", "Green");
             return true;
         }
     }
     $("#phone").blur(ktsdt);
-
-    // function ktChon(){
-    //     if(!$("#choose1").is(":checked") && !$("#choose2").is(":checked")){
-    //         $("#btchon").html("Please choose").css("color", "Red");
-    //         return false;
-    //     }
-    // }
-    // $(".btn-success").click(function(){
-    //     if(ktten && ktsdt){
-    //         if(!$("#choose1").is(":checked") && !$("#choose2").is(":checked")){
-    //             $("#btchon").html("Please choose").css("color", "Red");
-    //             return false;
-    //         }
-    //     }
-    // })
 })

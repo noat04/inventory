@@ -9,7 +9,7 @@ body {
 .header{
     width: auto;
     height: 80vh;
-    background-image: url('../IMAGE/sunlight-forest-fall-leaves-park-yellow-99608-wallhere.com.webp');
+    background-image: url('../IMAGE/9ab65851-f063-489e-ba2b-d1a46b083fa2.jpg');
     background-size: 100% auto;
 }
 .title{
@@ -70,18 +70,18 @@ body {
     color: #000;
 }
 .event-time{
-    width: 60%;
+    width: 65%;
     padding: 30px 10px 10px 10px;
     color: #000;
     position: relative;
-    left: 20%;
+    left: 18%;
     
 }
 /* Events Main */
 .events-main {
     display: flex;
     position: relative; /* Đặt vị trí tương đối */
-    width: auto;
+    width: 100%;
 }
 
 /* Đường kẻ dưới */
@@ -118,6 +118,7 @@ body {
     padding-right: 80px;
 }
 .section h3{
+    width: 100%;
     position: relative;
     top: 30%;
     color: #413b3b;
@@ -631,6 +632,7 @@ body {
 }
 /* CSS Custom Properties */
 :root {
-    --animation-delay: 0.5s; /* Độ trễ giữa các phần tử */
+    --animation-delay: 0.5s; 
+    /* Độ trễ giữa các phần tử */
 }
 

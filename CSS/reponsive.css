@@ -182,8 +182,8 @@
         position: absolute;
         width: 2px;
         height: 270px;
-        bottom: 10%;
-        left: 110%; 
+        bottom: 7.5%;
+        left: 115%; 
         background-color: black;
         transform: translateY(50%); 
     }
