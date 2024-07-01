@@ -5,11 +5,12 @@
 body {
     /* overflow-x: hidden; */
     width: 100%;
+    height: 100%;
 }
 .header{
     width: auto;
     height: 80vh;
-    background-image: url('../IMAGE/8bd6f2d6-f47d-4c48-88c2-c4aa77485b00.webp');
+    background-image: url('../IMAGE/8bd6f2d6-f47d-4c48-88c2-c4aa77485b00.png');
     background-size: 100% auto;
 }
 .title{
@@ -44,7 +45,7 @@ body {
 .information{
     text-align:center;
     width: 100%;
-    height: 770px;
+    height: 950px;
     background-color: beige;
    
 }
@@ -136,7 +137,7 @@ body {
     background-size: 100% auto;
 }
 .our-story{
-    margin: 400px 300px 10px 300px;
+    margin: 250px 300px 10px 300px;
     background-color: aliceblue;
 }
 .content{
@@ -176,7 +177,7 @@ body {
     width: 100%;
     height: auto;
     background-color: antiquewhite;
-    margin: 350px 0 0 0;
+    margin: 200px 0 0 0;
 }
 .bride{
     width: 70%;
@@ -417,7 +418,7 @@ body {
     width: auto;
     right: 10px;
     /* Các thuộc tính khác tùy theo nhu cầu của bạn */
-    z-index: 999; /* Đảm bảo footer hiển thị trên tất cả các phần khác */
+    z-index: 9999; /* Đảm bảo footer hiển thị trên tất cả các phần khác */
 }
 .modal-header{
     margin: 0;
@@ -457,7 +458,7 @@ body {
     animation: moveUpDown 2s infinite;
     bottom: 20px; /* Adjust this value to position it correctly */
     right: 20px; /* Adjust this value to position it correctly */
-    z-index: 1000;
+    z-index: 999;
     text-align: center;
 }
 .gift{
