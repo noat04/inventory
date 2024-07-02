@@ -145,6 +145,14 @@
     .wrapper{
         width: 100%;
     }
+    .snowflakes {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%; /* Cover the entire width of the page */
+        height: 100%; /* Cover the entire height of the page */
+        pointer-events:none; /* Allow clicks to go through snowflakes */
+    }
     .title h1 {
         font-size: 12vw;
     }

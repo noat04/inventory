@@ -8,7 +8,7 @@
 }
 @-webkit-keyframes snowflakes-fall {
     0% { top: -50px; }
-    100% { top: 11400px; }
+    100% { top: 11300px; }
   }
   
   @-webkit-keyframes snowflakes-shake {
@@ -18,7 +18,7 @@
   
   @keyframes snowflakes-fall {
     0% { top: -50px; }
-    100% { top: 11400px; }
+    100% { top: 11300px; }
   }
   
   @keyframes snowflakes-shake {
