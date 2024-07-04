@@ -22,22 +22,18 @@ document.addEventListener('DOMContentLoaded', function() {
     let snowflakes = document.getElementsByClassName('snowflake');
     let screenHeight = window.innerHeight;
 
-    // Set keyframes based on screen width
-    if (window.innerWidth <= 480) {
-        let styleSheet = document.styleSheets[0];
-        styleSheet.insertRule(`
-            @keyframes snowflakes-fall {
-                0% { top: -50px; }
-                100% { top: ${screenHeight}px; }
-            }
-        `, styleSheet.cssRules.length);
-    }
+    // Set keyframes based on screen height and width
+    let fallDistance = window.innerWidth <= 480 ? screenHeight / 2 : screenHeight * 2;
+    let styleSheet = document.styleSheets[0];
+    styleSheet.insertRule(`
+        @keyframes snowflakes-fall {
+            0% { top: -50px; }
+            100% { top: ${fallDistance}px; }
+        }
+    `, styleSheet.cssRules.length);
 
     for (let i = 0; i < snowflakes.length; i++) {
-        if (window.innerWidth <= 480) { // Nếu là thiết bị di động
-            snowflakes[i].style.top = `${-Math.random() * screenHeight / 2}px`; // Giảm độ cao bắt đầu
-        } else {
-            snowflakes[i].style.top = `${-Math.random() * screenHeight}px`;
-        }
+        snowflakes[i].style.top = `${-Math.random() * screenHeight}px`;
     }
 });
+
