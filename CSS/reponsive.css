@@ -147,10 +147,9 @@
     }
     .snowflakes {
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%; /* Cover the entire width of the page */
-        height: 100%; /* Cover the entire height of the page */
+        font-size: 0.5em; /* Giảm kích thước của tuyết */
+        -webkit-animation-duration: 50s, 5s; /* Giảm thời gian animation */
+        animation-duration: 50s, 5s;
         pointer-events:none; /* Allow clicks to go through snowflakes */
     }
     .title h1 {
@@ -196,7 +195,7 @@
         transform: translateY(50%); 
     }
     .point::before{
-        content: "";
+        /* content: "";
         display: block;
         position: absolute;
         width: 20px;
@@ -205,7 +204,8 @@
         left: 112%;
         transform: translateX(-50%);
         background-color: black;
-        z-index: 2;
+        z-index: 2; */
+        display: none;
     }
     .section{
         width: auto;
