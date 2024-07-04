@@ -7,8 +7,8 @@
     pointer-events:none; /* Allow clicks to go through snowflakes */
 }
 @-webkit-keyframes snowflakes-fall {
-    0% { top: -50px; }
-    100% { top: 1060vh; }
+    0% { top: -4.37vh; }
+    100% { top: 1200vh; }
   }
   
   @-webkit-keyframes snowflakes-shake {
@@ -17,8 +17,8 @@
   }
   
   @keyframes snowflakes-fall {
-    0% { top: -50px; }
-    100% { top:  1060vh; }
+    0% { top: -4.37vh; }
+    100% { top:  1200vh; }
   }
   
   @keyframes snowflakes-shake {
