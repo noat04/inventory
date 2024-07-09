@@ -10,7 +10,7 @@ body {
 .header{
     width: auto;
     height: 80vh;
-    background-image: url('../IMAGE/8bd6f2d6-f47d-4c48-88c2-c4aa77485b00.png');
+    background-image: url('../IMAGE/Thiết\ kế\ chưa\ có\ tên.png');
     background-size: 100% auto;
 }
 .title{
@@ -47,34 +47,72 @@ body {
     text-align:center;
     width: 100%;
     height: 950px;
-    background-color: beige;
+    background-color: antiquewhite;
    
 }
 .invitation{
     width: 30%;
     position: relative;
     left: 35%;
+    text-align: center;
+    display:flex;
 }
-.invitation h3{
+.invi{
+    width: 80%;
+}
+/* .invitation::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30%;
+    height: 2px;
+    background-color: black;
+    opacity: 2;
+} */
+ .intro{
+    width: 10%;
+    /* /* position: absolute; */
+ }
+.invi h4{
     padding: 50px 10px;
-    color: #000;
-    border-bottom: 2px solid black;
+    color: #346d34;
+    /* border-bottom: 2px solid black; */
 }
-.time_location h5,h3{
+.xi{
+    position: relative;
+    left: 0;
+    right: 0;
+    /* bottom: 50%; */
+    top: 50%;
+    height: .125em;
+    background-color:#336633;
+}
+.time_location h5,h4{
     padding: 30px 0 0 0;
-    color: #000;
+    color: #336633;
+}
+a{
+    color: #336633;
+    text-decoration: none;
+}
+a:hover{
+    color: brown;
+}
+.time_location h3{
+    color: #336633;
 }
 .event{
     padding:30px 0 0 0;
 }
 .event h3{
     padding: 40px 0 0 0;
-    color: #000;
+    color:#336633;
 }
 .event-time{
     width: 65%;
     padding: 30px 10px 10px 10px;
-    color: #000;
+    color:#336633;
     position: relative;
     left: 18%;
     
@@ -314,10 +352,17 @@ body {
     width: 50%;
     height: 500px;
 }
-.groom-box,.bride-box{
+.groom-box{
     background-color: aliceblue;
     width: 50%;
     color: aliceblue;
+    margin-top: 100px;
+}
+.bride-box{
+    background-color: aliceblue;
+    width: 50%;
+    color: aliceblue;
+    margin-top: 300px;
 }
 .bride img,.groom img{
     width: 100%;
@@ -329,7 +374,7 @@ body {
     position: absolute;
     top: 200px;
     left: 90px;
-    opacity: 0;
+    /* opacity: 0; */
     transition: all 0.5s;
     font-family: "Dancing Script", cursive;
 }
@@ -337,25 +382,25 @@ body {
     position: absolute;
     top: 200px;
     left: 70px;
-    opacity: 0;
+    /* opacity: 0; */
     transition: all 0.5s;
     font-family: "Dancing Script", cursive;
 }
-.bride-box:hover .bride-info,.groom-box:hover .groom-info{
+/* .bride-box:hover .bride-info,.groom-box:hover .groom-info{
     opacity: 1;
 } 
 .bride-box:hover img,.groom-box:hover img{
     filter: blur(5px);
 }
 .bride-box:hover .divider{
-    animation: rotateIn 0.5s forwards; /* Sử dụng animation fadeInUp và đặt thời gian là 1s */
-    animation-delay: calc(var(--animation-delay) * var(--index)); /* Tính toán độ trễ cho mỗi phần tử */
-}
+    animation: rotateIn 0.5s forwards;
+    animation-delay: calc(var(--animation-delay) * var(--index));
+} */
 .bride-box,.groom-box{
     position: relative;
     left: 170px;
 }
-.divider{
+/* .divider{
     width: 10%;
     height: auto;
     text-align: center;
@@ -367,7 +412,7 @@ body {
     width: 100%;
     border-radius:50px;
     transform-origin: center;
-}
+} */
 .video{
     width: 100%;
     height: auto;
@@ -426,7 +471,6 @@ body {
     position: relative;
     left: 14%;
 }
-
 .anh6 img{
     width: 100%; 
     height: auto;
@@ -475,8 +519,14 @@ body {
 }
 .footer{
     width: 100%;
-    height: 100px;
-    background-color:rgb(161, 182, 124);
+    height: 200px;
+    background-color:black;
+    text-align: center;
+}
+.ending{
+    font-size: 30px;
+    color: #fff;
+    padding-top: 100px;
 }
 .btn-footer {
     position: fixed;
