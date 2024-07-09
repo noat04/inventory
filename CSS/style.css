@@ -179,7 +179,8 @@ body {
     background-color: antiquewhite;
     margin: 200px 0 0 0;
 }
-.bride{
+
+/* .bride{
     width: 70%;
     height: 500px;
     display: flex;
@@ -199,7 +200,6 @@ body {
 .wedding-section{
     width: 60%;
     height: auto;
-    /* background-color: blueviolet; */
 }
 .wedding-main{
    padding: 10px 10px 10px 100px;
@@ -224,8 +224,8 @@ body {
 }
 .groom-padding{
     padding: 0px 100px 0px 0px;
-}
-.past{
+} */
+/* .past{
     width: 100%;
     height: auto;
     margin-top: 100px;
@@ -301,6 +301,69 @@ body {
 .box-right img{
     width: 100%;
     height: auto;
+} */
+.portfolio{
+    width: 100%;
+    height: auto;
+    display: flex;
+    text-align: center;
+    padding-top: 50px;
+}
+.bride,.groom{
+    width: 50%;
+    height: 500px;
+}
+.groom-box,.bride-box{
+    background-color: aliceblue;
+    width: 50%;
+    color: aliceblue;
+}
+.bride img,.groom img{
+    width: 100%;
+    height: 500px;
+    padding: 10px 10px 10px 10px;
+    transition: filter 0.3s;
+}
+.groom-info{
+    position: absolute;
+    top: 200px;
+    left: 90px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.bride-info{
+    position: absolute;
+    top: 200px;
+    left: 70px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.bride-box:hover .bride-info,.groom-box:hover .groom-info{
+    opacity: 1;
+} 
+.bride-box:hover img,.groom-box:hover img{
+    filter: blur(5px);
+}
+.bride-box:hover .divider{
+    animation: rotateIn 0.5s forwards; /* Sử dụng animation fadeInUp và đặt thời gian là 1s */
+    animation-delay: calc(var(--animation-delay) * var(--index)); /* Tính toán độ trễ cho mỗi phần tử */
+}
+.bride-box,.groom-box{
+    position: relative;
+    left: 170px;
+}
+.divider{
+    width: 10%;
+    height: auto;
+    text-align: center;
+    position: relative;
+    left: 630px;
+    bottom:300px;
+}
+.divider img{
+    width: 100%;
+    border-radius:50px;
+    transform-origin: center;
 }
 .video{
     width: 100%;
@@ -549,6 +612,23 @@ body {
         transform: perspective(100px) scale(1) rotateY(0deg); /* Lật màn hình về phía trước */
     }
 }
+/* Định nghĩa animation cho việc quay 360 độ */
+@keyframes rotate360 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.bride-box:hover .divider img,
+.groom-box:hover .divider img {
+    animation: rotate360 1s forwards;
+}
+
+/* Các phần khác trong file CSS của bạn */
+
 /* Áp dụng animation cho các phần tử */
 .title h1,
 .title h2,
@@ -635,5 +715,6 @@ body {
 :root {
     --animation-delay: 0.5s; 
     /* Độ trễ giữa các phần tử */
+    --rotate-degrees: 360deg;
 }
 
