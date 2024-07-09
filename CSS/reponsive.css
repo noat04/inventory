@@ -378,6 +378,14 @@
         position: relative; /* Đặt lại vị trí mặc định */
         top: -300px;
         left: 0;
+        color: aliceblue;
+        width: 100%;
+    }
+    .bride-info,.groom-info h4{
+        font-size: 30px;
+    }
+    .bride-info,.groom-info h5{
+        font-size: x-large;
     }
     .divider{
         width: 25%;

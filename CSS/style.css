@@ -30,7 +30,7 @@ body {
     text-align:center;
     color: aliceblue;
     font-size: 80px;
-    font-family: "Merriweather Sans", sans-serif;
+    font-family: "Alex Brush", cursive;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
@@ -41,6 +41,7 @@ body {
     color: aliceblue;
     padding-bottom: 10px;
     letter-spacing: 10px;
+    font-family: "Alex Brush", cursive;
 }
 .information{
     text-align:center;
@@ -330,6 +331,7 @@ body {
     left: 90px;
     opacity: 0;
     transition: all 0.5s;
+    font-family: "Dancing Script", cursive;
 }
 .bride-info{
     position: absolute;
@@ -337,6 +339,7 @@ body {
     left: 70px;
     opacity: 0;
     transition: all 0.5s;
+    font-family: "Dancing Script", cursive;
 }
 .bride-box:hover .bride-info,.groom-box:hover .groom-info{
     opacity: 1;
