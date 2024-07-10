@@ -441,13 +441,108 @@
         margin-bottom: 50px;
         
     }
+    .memories{
+        width:90%;
+        height: auto;
+        background-color: antiquewhite;
+        /* text-align: center;  */
+    }
+    .memories-content{
+        position: relative;
+        /* background-color: aquamarine; */
+        border-radius: 15px;
+        width: 100%;
+        height: auto;
+        margin-top: 80px;
+    }
     .memories-list{
         width: 100%;
-    }
-    .memories-list img{
-        width: 50%;
         height: auto;
     }
+    .memories-title h4{
+        font-size: 30px;
+        font-family: "Alex Brush", cursive;
+    }
+    .memories-title h5{
+        font-size: 30px;
+        font-family: "Dancing Script", cursive;
+    }
+    .memories-title h6{
+        font-size: 20px;
+        font-family: "Alex Brush", cursive;
+    }
+    .memories-task{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .nav-item{
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 10px;
+        color: black;
+        
+    }
+    .nav{
+        width: auto;
+        text-align: center;
+        position: relative;
+        left: 0%;
+    }
+    .memories-content{
+        position: relative;
+        /* background-color: aquamarine; */
+        border-radius: 20px;
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 100px;
+    }
+    .memories-list{
+        background-color: whitesmoke;
+        width: 100%;
+        height: auto;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+    .row{
+        width: 100%;
+        height: auto;
+        text-align:center;
+        margin: 0;
+    }
+    col{
+        width: 100%;
+        height: auto;
+    }
+    .col img{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        border-radius: 0px;
+        border: 1px solid black;
+    }
+    .memories-task{
+        width: 100%;
+    }
+    .memories-task ul{
+        display: flex;
+        width: 100%;
+    }
+    .ul li{ 
+        
+        font-size: 5px;
+        padding-left: 200px;
+    }
+    .li{
+       padding-left: 200px;
+    }
+    /* .memories-list img{
+        width: 50%;
+        height: auto;
+    } */
+     .video{
+        margin-top: 50px;
+     }
     .video-title {
         width: 90%;
         position: relative;
@@ -470,6 +565,10 @@
         margin-bottom: 70px;
         font-size: 5vw;
     }
+    .picture{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
     .yes-no{
         padding: 20px;
     }
@@ -490,11 +589,11 @@
         left:30%;
     }
     .footer{
-        height:20vh;
+        height:22vh;
         
     }
     .ending{
-        padding-top: 50px;
-        font-size: 1.7vh;
+        padding-top: 65px;
+        font-size: 1.9vh;
     }
 }
