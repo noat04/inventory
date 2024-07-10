@@ -441,8 +441,11 @@
         margin-bottom: 50px;
         
     }
+    .memories-list{
+        width: 100%;
+    }
     .memories-list img{
-        width: 30%;
+        width: 50%;
         height: auto;
     }
     .video-title {
