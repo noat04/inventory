@@ -511,6 +511,9 @@
         text-align:center;
         margin: 0;
     }
+    .col1{
+        margin-top: 10px;
+    }
     col{
         width: 100%;
         height: auto;
