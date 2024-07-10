@@ -441,9 +441,9 @@ a:hover{
     background-color: azure;
     text-align: center;  
 }
-.memories-list li{
+/* .memories-list li{
     width: 20px;
-}
+} */
 .memories-list img{
     width: 40%;
     height: auto;
