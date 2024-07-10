@@ -56,6 +56,7 @@ body {
     left: 35%;
     text-align: center;
     display:flex;
+    font-family: "Pacifico", cursive;
 }
 .invi{
     width: 80%;
@@ -76,7 +77,7 @@ body {
  }
 .invi h4{
     padding: 50px 10px;
-    color: #346d34;
+    color: black;
     /* border-bottom: 2px solid black; */
 }
 .xi{
@@ -86,33 +87,35 @@ body {
     /* bottom: 50%; */
     top: 50%;
     height: .125em;
-    background-color:#336633;
+    background-color:black;
 }
 .time_location h5,h4{
     padding: 30px 0 0 0;
-    color: #336633;
+    color:black;
+    font-family: "Alex Brush", cursive;
 }
 a{
-    color: #336633;
+    color: black;
     text-decoration: none;
 }
 a:hover{
     color: brown;
 }
 .time_location h3{
-    color: #336633;
+    color: black;
+    font-family: "Alex Brush", cursive;
 }
 .event{
     padding:30px 0 0 0;
 }
 .event h3{
     padding: 40px 0 0 0;
-    color:#336633;
+    color:black;
 }
 .event-time{
     width: 65%;
     padding: 30px 10px 10px 10px;
-    color:#336633;
+    color:black;
     position: relative;
     left: 18%;
     
@@ -216,7 +219,7 @@ a:hover{
     width: 100%;
     height: auto;
     background-color: antiquewhite;
-    margin: 200px 0 0 0;
+    margin: 100px 0 0 0;
 }
 
 /* .bride{
@@ -453,6 +456,7 @@ a:hover{
     width: 100%;
     height: auto;
     padding-top: 100px;
+    padding-bottom: 100px;
     /* position: relative;
     left: 12%; */
     text-align: center;

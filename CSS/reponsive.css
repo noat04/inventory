@@ -247,11 +247,11 @@
         background-size: 100% auto;
     }
     .our-story{
-        margin: 200px 50px 200px 50px;
+        margin: 100px 50px 120px 50px;
         background-color: aliceblue;
     }
     .main{
-        margin: 400px 0px 0px 0px;
+        margin: 150px 0px 0px 0px;
     }
     .content-title {
         width: 100%;
@@ -345,7 +345,7 @@
         width: 90%;
         margin: 0 auto; /* Căn giữa */
         text-align: center; /* Căn giữa nội dung bên trong */
-        margin-bottom:50px;
+        margin-bottom:40px;
         margin-top: 10px;
     }
 
@@ -376,25 +376,27 @@
     }
     .bride-info{
         position: relative; /* Đặt lại vị trí mặc định */
-        top: -670px;
+        top: -700px;
         left: 0;
         color: aliceblue;
         width: 100%;
     }
     .groom-info{
         position: relative; /* Đặt lại vị trí mặc định */
-        top: -670px;
+        top: -690px;
         left: 0;
         color: aliceblue;
         width: 100%;
     }
     .bride-info h4,.groom-info h4{
         color: grey;
-        font-size: 50px;
+        font-size: 60px;
+        font-family: "Dancing Script", cursive;
     }
-    .bride-info,.groom-info h5{
+    .bride-info h5,.groom-info h5{
         color: grey;
-        font-size: x-large;
+        font-size: 35px;
+        font-family: "Dancing Script", cursive;
     }
     .divider{
         width: 25%;
@@ -421,12 +423,14 @@
     .wedding-event-title{
         text-align: center;
         font-size: 5vh;
-        font-weight: 500;
+        font-weight: 700;
+        font-family: "Ysabeau Infant", sans-serif;
     }
     .wedding-event-text{
-        margin: 50px 95px 50px 95px;
+        margin: 50px 90px 50px 90px;
         text-align: center;
-        font-size:2vh;
+        font-size:2.2vh;
+        font-family: "Arima", system-ui;    
     }
     .wedding-event-img{
         width: 100%;
