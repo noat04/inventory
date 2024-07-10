@@ -446,6 +446,8 @@
         height: auto;
         background-color: antiquewhite;
         /* text-align: center;  */
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
     .memories-content{
         position: relative;
@@ -476,11 +478,10 @@
         width: 100%;
     }
     .nav-item{
-        font-size: 20px;
+        font-size: 17px;
         padding-left: 20px;
         padding-right: 10px;
         color: black;
-        
     }
     .nav{
         width: auto;
@@ -541,7 +542,8 @@
         height: auto;
     } */
      .video{
-        margin-top: 50px;
+        margin-top: 10px;
+        
      }
     .video-title {
         width: 90%;

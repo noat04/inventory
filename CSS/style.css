@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Ballet:opsz@16..72&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -89,9 +98,14 @@ body {
     height: .125em;
     background-color:black;
 }
-.time_location h5,h4{
+.time_location h4{
     padding: 30px 0 0 0;
     color:black;
+    font-family: "Alex Brush", cursive;
+}
+.time_location a{
+    padding: 30px 0 0 0;
+    color: red;
     font-family: "Alex Brush", cursive;
 }
 a{
@@ -99,7 +113,7 @@ a{
     text-decoration: none;
 }
 a:hover{
-    color: brown;
+    color: grey;
 }
 .time_location h3{
     color: black;
@@ -514,7 +528,7 @@ a:hover{
 .video{
     width: 100%;
     height: auto;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .video-title{
     width: 50%;
@@ -699,7 +713,17 @@ a:hover{
 .form-label{
     text-align: center;
 }
-
+.yes-no{
+    padding-left:500px;
+}
+.hidden{
+    opacity: 0;
+    /* animation: fadeInUp 0.5s forwards; */
+    transition: all 2s;
+}
+.show{
+    opacity: 1;
+}
 @keyframes moveUpDown {
     0%, 100% {
         transform: translateY(0);
@@ -773,12 +797,6 @@ a:hover{
         transform: rotate(360deg);
     }
 }
-
-.bride-box:hover .divider img,
-.groom-box:hover .divider img {
-    animation: rotate360 1s forwards;
-}
-
 /* Các phần khác trong file CSS của bạn */
 
 /* Áp dụng animation cho các phần tử */
@@ -790,63 +808,58 @@ a:hover{
 .time_location h3,
 .event h3 ,.events-main::after{
     opacity: 0; 
-    /* Ẩn các chữ ban đầu */
-    animation: fadeInUp 0.5s forwards; /* Sử dụng animation fadeInUp và đặt thời gian là 1s */
-    animation-delay: calc(var(--animation-delay) * var(--index)); /* Tính toán độ trễ cho mỗi phần tử */
-
+    animation: fadeInUp 0.5s forwards;
+    animation-delay: calc(var(--animation-delay) * var(--index));
 }
 .information{
     opacity: 0;
-    animation: fadeInUp 0.5s forwards; /* Sử dụng animation fadeInUp và đặt thời gian là 1s */
-    animation-delay: calc(var(--animation-delay) * var(--index)); /* Tính toán độ trễ cho mỗi phần tử */
+    animation: fadeInUp 0.5s forwards; 
+    animation-delay: calc(var(--animation-delay) * var(--index)); 
 }
 .section, .content-text{
     opacity: 0;
     animation: fadeInRight 0.5s forwards;
-    animation-delay: calc(var(--animation-delay) * var(--index)); /* Tính toán độ trễ cho mỗi phần tử */
+    animation-delay: calc(var(--animation-delay) * var(--index)); 
 }
 .point::before{
     opacity: 0;
     animation: fadeInRight 0.5s forwards;
-    animation-delay: calc(var(--animation-delay) * var(--index)); /* Tính toán độ trễ cho mỗi phần tử */
+    animation-delay: calc(var(--animation-delay) * var(--index)); 
 }
 .content-left{
     opacity: 0;
     animation: fadeInLeft 1s forwards;
-    animation-delay: calc(var(--animation-delay) * var(--index)); /* Tính toán độ trễ cho mỗi phần tử */
+    animation-delay: calc(var(--animation-delay) * var(--index)); 
 }
 .icon{
     opacity: 0;
-    animation: fadeInUp 1s forwards; /* Sử dụng animation fadeInUp và đặt thời gian là 1s */
-    animation-delay: calc(var(--animation-delay) * var(--index)); /* Tính toán độ trễ cho mỗi phần tử */
+    animation: fadeInUp 1s forwards; 
+    animation-delay: calc(var(--animation-delay) * var(--index)); 
 }
 .groom-right,.bride-right{
     opacity: 0;
     animation: fadeInRight 2s forwards;
-    animation-delay: calc(var(--animation-delay) * var(--index)); /* Tính toán độ trễ cho mỗi phần tử */
+    animation-delay: calc(var(--animation-delay) * var(--index)); 
 }
 .bride-left,.groom-left{
     opacity: 0;
     animation: fadeInLeft 2s forwards;
-    animation-delay: calc(var(--animation-delay) * var(--index)); /* Tính toán độ trễ cho mỗi phần tử */
+    animation-delay: calc(var(--animation-delay) * var(--index)); 
 }
 .icon-past,.past-title,.photo-title,.picture{ 
     opacity: 0;
-    animation: fadeInUp 2s forwards; /* Sử dụng animation fadeInUp và đặt thời gian là 1s */
-    animation-delay: calc(var(--animation-delay) * var(--index)); /* Tính toán độ trễ cho mỗi phần tử */
+    animation: fadeInUp 2s forwards; 
+    animation-delay: calc(var(--animation-delay) * var(--index)); 
 }
 .box-number,.box-left{
     opacity: 0;
-    animation: fadeInUp 2s forwards; /* Sử dụng animation fadeInUp và đặt thời gian là 1s */
-    animation-delay: calc(var(--animation-delay) * var(--index)); /* Tính toán độ trễ cho mỗi phần tử */
+    animation: fadeInUp 2s forwards;
+    animation-delay: calc(var(--animation-delay) * var(--index)); 
 }
 .rvsp{
     opacity: 0;
-    animation: fadeInUp 3s forwards; /* Sử dụng animation fadeInUp và đặt thời gian là 1s */
-    animation-delay: calc(var(--animation-delay) * var(--index)); /* Tính toán độ trễ cho mỗi phần tử */
-}
-.yes-no{
-    padding-left:500px;
+    animation: fadeInUp 3s forwards; 
+    animation-delay: calc(var(--animation-delay) * var(--index)); 
 }
 /* /////////////////////////////////////////// */
 .video-title{
@@ -863,10 +876,54 @@ a:hover{
     animation-iteration-count: 1;
     animation-delay: calc(var(--animation-delay) * var(--index)); /* Tính toán độ trễ cho mỗi phần tử */
 }
-/* CSS Custom Properties */
+
+.animated {
+    opacity: 0;
+    animation: fadeInUp 0.5s forwards;
+    animation-delay: calc(var(--animation-delay) * var(--index));
+}
+.information.animated {
+    animation: fadeInUp 0.5s forwards;
+}
+.section.animated, .content-text.animated {
+    animation: fadeInRight 0.5s forwards;
+}
+.point::before.animated {
+    animation: fadeInRight 0.5s forwards;
+}
+.content-left.animated {
+    animation: fadeInLeft 1s forwards;
+}
+.icon.animated {
+    animation: fadeInUp 1s forwards;
+}
+.groom-right.animated, .bride-right.animated {
+    animation: fadeInRight 2s forwards;
+}
+.bride-left.animated, .groom-left.animated {
+    animation: fadeInLeft 2s forwards;
+}
+.icon-past.animated, .past-title.animated, .photo-title.animated, .picture.animated {
+    animation: fadeInUp 2s forwards;
+}
+.box-number.animated, .box-left.animated {
+    animation: fadeInUp 2s forwards;
+}
+.rvsp.animated {
+    animation: fadeInUp 3s forwards;
+}
+.video-title.animated {
+    animation: fadeInUp 2s forwards;
+}
+.video-slide video.animated {
+    width: 100%;
+    height: auto;
+    animation: flipIn 2s forwards;
+    animation-iteration-count: 1;
+}
+
 :root {
     --animation-delay: 0.5s; 
-    /* Độ trễ giữa các phần tử */
     --rotate-degrees: 360deg;
 }
 
